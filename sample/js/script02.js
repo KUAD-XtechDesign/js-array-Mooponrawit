@@ -9,25 +9,25 @@ $(function(){
 
   
   $("#button01").on("click",function(){
-    let txt =""
+    let students_txt = "";
 
     for(let i=0; i<students.length; i++){
-      txt += students[i]
+      students_txt += students[i]
+      students_txt += '/'
     }
 
-    $("#content").text(txt);
+    $("#content").text(students_txt);
 
   })
 
   $("#button02").on("click",function(){
-    let txt =""
+    let students_txt =""
 
     for(let i=0; i<students.length; i++){
-      txt += "<div class='student_name' id='student"+i+"'>" + students[i] + "</div>"
-    
-
-    $("#content").html(txt);
+      students_txt += "<div id='student" + i + "' class='student'>" + student[i] + "</div>"
     }
+
+    $("#content").html(students_txt);
 
   })
 
