@@ -24,9 +24,8 @@ $(function(){
     let students_txt =""
 
     for(let i=0; i<students.length; i++){
-      students_txt += "<div id='student" + i + "' class='student'>" + student[i] + "</div>"
+      students_txt += "<div id='student" + i + "' class='student'>" + students[i] + "</div>"
     }
-
     $("#content").html(students_txt);
 
   })
